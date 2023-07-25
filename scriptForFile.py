@@ -7,8 +7,8 @@ extensions={
     for item in os.listdir(target_folder) 
         if os.path.isfile(os.path.join(target_folder, item))
 }
-# Create folders for each extension type
 
+# Create folders for each extension type
 for extension in extensions:
     if not os.path.exists(os.path.join(target_folder, extension)):
         os.mkdir(os.path.join(target_folder, extension))
